@@ -1,0 +1,137 @@
+.user-center{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:column;
+    -webkit-flex-direction:column;
+    position: relative;
+}
+.timeline-wrapper{ width:100%;}
+
+.vis-wrapper{ width:100%;
+    }
+
+.chart-wrapper{ width:100%;}
+
+.user-center-header{
+    width:100%;
+    background-color: #97D2B5;
+    color: white;
+}
+
+.user-profolio {
+    width: 70%;
+    margin: 0 auto;
+    padding:20px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.time-container{
+    width: 70%;
+    padding:5px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.vis-container{
+    width: 90%;
+    margin:150px auto;
+   padding:5px;
+   border-radius: 10px;
+}
+
+.chart-container{width: 90%;
+    margin:150px auto;
+    padding:5px;
+    border-radius: 10px;}
+
+.time-btn-container{
+    padding: 5px;
+    width: 15%;
+    float: left;
+    margin: 50px;
+    }
+.time-btn-container ul li{
+
+    margin-bottom: 15px;
+    text-align: center ;
+    list-style-type: none;
+}
+
+.month-btn{
+    background-color: #97D2B5;
+padding:5px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    width:100px;
+}
+
+.time-btn-container ul li button a{
+   margin:5px;
+    text-decoration: none;
+    color:#FFF;
+    font-weight : bold;
+}
+
+
+.user-avatar {
+    flex: 0 0 200px;
+    -webkit-flex:0 0 200px;
+}
+.user-image img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.user-info{ 
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.user-info .user-name{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+
+.user-summary {
+    display: flex;
+    display: -webkit-flex;
+    margin-top:20px;
+    height:75px;
+}
+.user-summary .split{
+    display: inline-block;
+    height:100%;
+    width:0;
+    border:1px solid white;
+    margin:0 20px;
+}
+.user-summary .training-course-kpi{
+    width:115px;
+    height:100%;
+    text-align: center;
+}
+.user-summary .training-course-kpi .kpi-title{
+    font-size: 1.2rem;
+}
+.user-summary .training-course-kpi .kpi-value{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.user-links{
+    -webkit-flex: 0 0 200px;
+            flex: 0 0 200px;
+}
+.user-links .title{
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+}
+.user-links .item{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,46 @@
+    .roster-selector{
+      position: relative;
+    }
+
+    .ui-autocomplete {
+          position: absolute;
+          background-color: #ddd;
+          max-height: 310px !important;
+          top:50px;
+          left:0px;
+          min-height: 50px;
+          max-width: 300px !important;
+          overflow: hidden;
+          padding: 10px;
+          z-index: 9999;
+      }
+      .ui-helper-hidden-accessible {
+        display: none;
+      }
+      .ui-menu-add {
+        text-align: center;
+      }
+      .ui-menu-group {
+        margin-right: 10px;
+        text-align: right;
+        color: red;
+      }
+      .ui-state-hover,
+      .ui-state-focus,
+      .ui-state-active {
+          border: none;
+          background: none;
+          cursor: pointer;
+      }
+      /* Scrollbar Styles */
+      ::-webkit-scrollbar {
+          background-color: transparent;
+          width: 15px;
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #aaa;
+          min-height: 20px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #ddd;
+      }

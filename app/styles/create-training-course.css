@@ -1,0 +1,64 @@
+.create-course{
+	width:80%;
+	margin:20px auto;
+}
+
+.create-course fieldset{
+	margin-bottom: 20px;
+
+}
+
+.create-course .title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.create-course .control-group{
+	margin:20px auto;
+}
+.create-course .control-label{
+	width:20%;
+	vertical-align: top;
+	padding-top: 8px;
+
+}
+
+.create-course .form-control{
+	width:70%;
+	display: inline-block;
+}
+
+.create-course input[type=date]{
+	  width: 260px;
+}
+
+.create-course .short-input{
+	  width: 160px;
+}
+
+.create-course textarea{
+	height: 300px;
+	resize: none;
+
+}
+
+.create-course .action-buttons-container{
+  width: 70%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.create-course .action-buttons-container .action-buttons{
+	display: inline-block;
+	float:right;
+}
+ 
+.create-course .key-skill-item-container{
+	margin-left: 20%;
+}
+.create-course .key-skill-item{
+	display: inline-block;
+	margin: 10px;
+}
+.create-course .key-skill-item .delete-key-skill-item{
+	cursor: pointer;
+}

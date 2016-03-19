@@ -1,0 +1,168 @@
+
+
+a {
+    text-decoration: none !important;
+}
+a:hover{
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+
+.welcome-section, .aboutus-section{
+  background-size: cover;
+  height: 400px;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.page-container {
+  display: -webkit-flex;
+  display: flex;
+}
+.page-section {
+position: relative;
+  margin:0 auto;
+}
+
+.page-section .wrap {
+position: relative;
+padding:12% 0;
+}
+
+.wrap{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-section-heading {
+padding-bottom: 44px;
+}
+
+.page-section-title {
+    text-align: center;
+color: #404040;
+border-bottom: 2px solid #e5e5e5;
+font-family: 'Lato',Arial !important;
+font-size: 36px;
+line-height: 42px;
+font-style: normal;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+.page-section-subtitle {
+    text-align: center;
+color: #b3b3b3;
+font-family: 'Lato',Arial !important;
+font-size: 24px;
+line-height: 30px;
+font-style: normal;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: -1px;
+}
+
+.page-section-title span {
+display: inline-block;
+margin-bottom: -2px;
+padding-bottom: 5px;
+}
+
+.page-features{
+    height:100%;
+}
+
+.column3_1{
+  float:left;
+  width:33%;
+  height:100%;
+  display: inline-block;
+  padding:0 24px;
+  margin-bottom: 48px;
+}
+
+.feature-circle {
+  text-align: center;
+  margin: 0 20px 24px;
+  height:100%;
+}
+
+.feature-icon {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.feature-circle-name {
+  color: #404040;
+}
+
+.feature-circle-content {
+  font-size:1.1rem;
+}
+
+.feature-icon-circle {
+  background-color: #1bbc9b;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+}
+
+.feature-icon-table {
+  display: table;
+  width: 150px;
+  height: 150px;
+}
+
+.feature-icon-inside {
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+
+.feature-icon-inside:hover {
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.feature-circle-button a {
+    color: #1bbc9b;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+/************responsive***********/
+@media all and (max-width: 1500px){
+  .wrap{
+    width:100%;
+  }
+}
+@media all and (max-width: 600px){
+
+  .column3_1{
+    width:100%;
+    height:100%;
+    margin-bottom: 48px;
+  }
+
+  .page-section-title{
+    font-size:24px;
+  }
+  .page-section-subtitle{
+    font-size: 18px;
+  }
+}

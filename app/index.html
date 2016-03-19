@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Training Map</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline.css" />
+    <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline-animations.css" />
+    <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline-bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/vis/dist/vis.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/header-menu.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/vendor/ng-grid.css">
+    <link rel="stylesheet" href="styles/search-course.css">
+    <link rel="stylesheet" href="styles/training-course.css">
+    <link rel="stylesheet" href="styles/user-center.css">
+    <link rel="stylesheet" href="styles/user-center-plaza.css">
+    <link rel="stylesheet" href="styles/skillmap-home.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/create-training-course.css">
+    <link rel="stylesheet" href="styles/autocomplete.css">
+    <link rel="stylesheet" href="styles/course-list.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+
+
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+  </head>
+  <body ng-app="webappApp" ng-controller="MainController">
+      <ng-include src="'views/header.html'"></ng-include>
+
+      <div class="main-wrapper">
+        <div ng-view=""></div>
+      </div>
+
+
+
+      <div class="footer">
+        <div>
+          <span>&copy; 2015 - Training Map by Schlumberger</span>
+        </div>
+      </div>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-smart-table/dist/smart-table.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/ui-autocomplete/autocomplete.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/ngUpload/ng-upload.js"></script>
+    <script src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
+    <script src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
+    <script src="bower_components/vis/dist/vis.min.js"></script>
+    <script src="bower_components/highcharts/highcharts.js"></script>
+    <script src="bower_components/highcharts/highcharts-more.js"></script>
+    <script src="bower_components/highcharts/modules/exporting.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main-controller.js"></script>
+        <script src="scripts/controllers/training-course-controller.js"></script>
+        <script src="scripts/controllers/create-training-course-controller.js"></script>
+        <script src="scripts/controllers/training-home-controller.js"></script>
+        <script src="scripts/controllers/user-history-training-course-controller.js"></script>
+        <script src="scripts/controllers/user-center-controller.js"></script>
+        <script src="scripts/controllers/user-center-plaza-controller.js"></script>
+        <script src="scripts/controllers/skillmap-home-controller.js"></script>
+        <script src="scripts/services/training-course-service.js"></script>
+        <script src="scripts/services/feedback-service.js"></script>
+        <script src="scripts/services/skill-service.js"></script>
+        <script src="scripts/services/user-service.js"></script>
+        <script src="scripts/services/user-kpi-service.js"></script>
+        <script src="scripts/services/course-attachment-service.js"></script>
+        <script src="scripts/directives/star-rating/star-rating-directive.js"></script>
+        <script src="scripts/directives/ng-enter/ng-enter-directive.js"></script>
+        <script src="scripts/filters/local-date-filter.js"></script>
+        <script src="scripts/filters/gin-filter.js"></script>
+        <script src="scripts/filters/date-filter.js"></script>
+        <!-- endbuild -->
+
+
+       <script type='text/javascript'>
+         window.__wtw_lucky_site_id = 37190;
+
+         (function() {
+           var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+           wa.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.luckyorange.com/w.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+         })();
+       </script>
+
+      <script>
+
+         (function(f,b){
+           var c;
+           f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+           f._hjSettings={hjid:35010, hjsv:4};
+           c=b.createElement("script");c.async=1;
+           c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+           b.getElementsByTagName("head")[0].appendChild(c);
+         })(window,document);
+       </script>
+
+      <script type="text/javascript" id="inspectletjs">
+         window.__insp = window.__insp || [];
+         __insp.push(['wid', 709675120]);
+         (function() {
+           function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+           if (window.attachEvent) window.attachEvent('onload', __ldinsp);
+           else window.addEventListener('load', __ldinsp, false);
+         })();
+       </script>
+
+
+  </body>
+</html>

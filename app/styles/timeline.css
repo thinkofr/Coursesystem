@@ -1,0 +1,46 @@
+.timeline-wrapper .timeline li timeline-badge{
+	height:40px;
+	width:100px;
+	line-height: 40px;
+	font-size:1rem;
+	border-radius: 10%;
+	margin-left: -50px;
+    background-color: #97D2B5;
+    box-shadow: none;
+}
+
+ul.timeline li{
+
+    margin-bottom: -60px;
+    position: relative;
+}
+
+ul.timeline li timeline-panel.timeline-panel-wrapper{
+	width:calc(50% - 70px);
+}
+.timeline-wrapper .timeline li timeline-panel{
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+ul.timeline li .timeline-panel .course-introduction{
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 2;
+  	-webkit-box-orient: vertical;
+}
+
+ul.timeline li .timeline-panel{
+	width:calc(100% - 45px);
+}
+
+.timeline .course-title{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.timeline-wrapper .timeline li timeline-badge.start-point{
+	margin-top:-25px;
+}

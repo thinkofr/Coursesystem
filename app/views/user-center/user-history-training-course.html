@@ -1,0 +1,44 @@
+<div ng-controller="UserHistoryTrainingCourseController" class="timeline-wrapper">
+<div class="time-container">
+
+
+    <timeline>
+    <timeline-event ng-repeat="course in trainingCourses">
+
+      <timeline-badge id="{{course.StartDate}}">
+        <span>{{course.StartDate  | localDateFilter | date:"MM/dd/yyyy"}}</span>
+      </timeline-badge>
+
+      <timeline-panel class="timeline-panel-wrapper">
+        <timeline-heading>
+          <a  class="course-title" ng-click="goToTrainingCourse(course.Guid)">{{course.Title}}</a>
+          <span class="course-rating"><star-rating score='course.Rating'></star-rating></span>
+	        <p class="course-introduction" ng-if="course.CourseIntroduction" ng-bind-html="course.CourseIntroduction">
+	        </p>
+        </timeline-heading>
+	      <timeline-footer>
+		    </timeline-footer>
+      </timeline-panel>
+    </timeline-event>
+
+    <timeline-event>
+     <timeline-badge class="start-point">
+        <span>Start</span>
+      </timeline-badge>
+    </timeline-event>
+</timeline>
+</div>
+
+    <div class="time-btn-container">
+      <ul>
+          <li ng-repeat="course in trainingCourses | oncePerMonth">
+              <button class="month-btn">
+                  <a href="/training/#/user-center/{{currentUser.Alias}}#{{course.StartDate}}">
+              {{course.StartDate | localDateFilter | date:"MM/yyyy"}}
+                  </a>
+              </button>
+          </li>
+      </ul>
+
+    </div>
+</div>

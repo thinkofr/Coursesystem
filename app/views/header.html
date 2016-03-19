@@ -1,0 +1,18 @@
+<header>
+<div class="header-logo">
+        <!-- <img src='images/training.png'> -->
+        Training Map
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="/training">Home</a></li>
+            <li><a href="/SkillmapHome.aspx">skillmap</a></li>
+            <li><a href="/training#training-home">Training</a></li>
+            <li><a href="/training#user-center-plaza">user center</a></li>
+            <!-- <li><a href="/training#about">About Us</a></li> -->
+            <li ng-show="currentUser == null"><a href="/Account/Login.aspx">Sign in</a></li>
+            <li ng-show="currentUser != nulll"><a href="/training#user-center/{{currentUser.Alias}}">{{currentUser.Name}}</a></li>
+            <li ng-show="currentUser != null"><a ng-click="signOff()">Sign off</a></li>
+        </ul>
+    </nav>
+</header>

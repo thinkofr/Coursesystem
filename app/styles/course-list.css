@@ -1,0 +1,61 @@
+.create-training-course {
+	float:right;
+}
+.courses-summary{
+	font-size: 1.6rem;
+}
+.course-table{
+	width:80%;
+	margin:0 auto;
+}
+.course-list{
+	width: 65%;
+	display: inline-block;
+}
+.skill-course-relation-list{
+	width:35%;
+	display: inline-block;
+	float: right;
+    padding-left: 70px;
+    padding-top: 60px;
+}
+.skill-course-relation-list .skill-course-relation-title{
+	border-bottom: 1px solid #ddd;
+	font-size:1.2rem;
+}
+.skill-course-relation-list .skill-item{
+	padding-bottom: 10px;
+}
+.skill-course-relation-list .skill-item:hover{
+	font-style: bold;
+}
+.course-item{
+  margin: 15px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-item .title{
+	font-size: 1.5rem;
+}
+.course-item .course-info{
+
+}
+.course-item .rating{
+	float:right;
+}
+.course-item .instroductor{
+	padding-right: 40px;
+	font-style:bold;
+}
+.course-item .course-date{
+	padding-left:40px;
+}
+
+.sorting{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.sorting .sort-method{
+	padding-right:30px;
+}

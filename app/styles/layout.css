@@ -1,0 +1,117 @@
+html,body,[ng-view],.view-content{
+  height:100%;
+  
+}
+
+html {
+    display: block;
+    position: relative;
+   
+    font-size: 14px;
+}
+
+body{
+  overflow: hidden;
+}
+html body{
+ font-family:  'Open Sans', sans-serif,serif;
+}
+
+
+div.header-wrapper {
+  background-color: #333d46;;
+  height: 60px;
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+}
+
+div.header{
+  width:1200px;
+  height:60px;
+  position: relative;
+  margin: 0 auto;
+}
+
+div.login-wrapper {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  text-align: right;
+}
+
+div.main-wrapper{
+  height:calc(100% - 90px);
+  position: fixed;
+  top:60px;
+  left:0;
+  right:0;
+  bottom: 30px;
+  overflow: auto;
+}
+.view-content{
+  width: 80%;
+  min-width: 1000px;
+  margin:0 auto;
+}
+div.footer {
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 14px;
+  background-color: #333D46;
+  color: #1BB093;
+}
+
+.st-sort-ascent:before {
+  content: '\25B2';
+}
+
+.st-sort-descent:before {
+  content: '\25BC';
+}
+
+
+
+/*****************responsive design***********************************/
+@media all and (max-width: 1000px){
+  .view-content{
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media all and (max-width: 600px){
+
+  body {
+   overflow: initial; 
+   font-size: 14px;
+  }
+  html, body, [ng-view], .view-content {
+    height: initial;
+    width:100%;
+  }
+  header{
+    display: none;
+  }
+
+  .view-content{
+    margin:initial;
+    display: initial;
+    flex-direction: initial;
+  }
+
+  div.main-wrapper {
+    height: initial;
+    position: initial;
+    top: 0;
+  }
+
+  div.footer {
+    position: initial;
+  }
+}
